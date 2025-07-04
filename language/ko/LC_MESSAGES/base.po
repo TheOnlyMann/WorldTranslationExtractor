@@ -1,0 +1,164 @@
+# World Translation Extractor Language File.
+# Copyright (C) 2024 Suso
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WorldTranslationExtractor 1.0.0\n"
+"POT-Creation-Date: 2024-07-27 23:57+0200\n"
+"PO-Revision-Date: 2024-07-27 23:57+0200\n"
+"Last-Translator: Suso\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: .\src\extract.py:71
+msgid "Scanning dimension '{}'..."
+msgstr "'{}' 차원을 스캔하는 중..."
+
+#: .\src\extract.py:140
+msgid "Extracting from world:"
+msgstr "세계에서 추출중:"
+
+#: .\src\extract.py:142
+msgid "Extracting from structures..."
+msgstr "구조물에서 추출 중..."
+
+#: .\src\extract.py:145
+msgid "Extracting from data files..."
+msgstr "데이터 파일에서 추출 중..."
+
+#: .\src\extract.py:148
+msgid "Extracting from text files..."
+msgstr "텍스트 파일에서 추출 중..."
+
+#: .\src\extract.py:151
+msgid "Outputting lang to '{}'..."
+msgstr "언어 파일을 '{}'에 출력 중..."
+
+#: .\src\extract.py:156
+msgid "Done!"
+msgstr "완료!"
+
+#: .\src\settings.py:14
+msgid "Extractors not found {}"
+msgstr "추출기를 찾을 수 없음 {}"
+
+#: .\src\settings.py:16
+msgid "Extractors incompatible with data version {}"
+msgstr "추출기가 데이터 버전 {}과(와) 호환되지 않음"
+
+#: .\src\settings.py:18
+msgid "Could not write to file '{}'"
+msgstr "'{}' 파일에 쓸 수 없습니다"
+
+#: .\src\settings.py:19
+msgid "; "
+msgstr "; "
+
+#: .\src\wte.py:23
+msgid "A tool to extract translatable text from Minecraft worlds to facilitate localization."
+msgstr "마인크래프트 세계에서 번역 가능한 텍스트를 추출하여 현지화를 돕는 도구입니다."
+
+#: .\src\wte.py:26
+msgid "Path to the target world."
+msgstr "대상 세계에 대한 파일 경로입니다."
+
+#: .\src\wte.py:27
+msgid "Path to output a translated copy of the world. By default, outputs to <WORLD>_wte."
+msgstr "번역된 세계 복사본을 출력할 경로입니다. 기본값은 <WORLD>_wte입니다."
+
+#: .\src\wte.py:28
+msgid "Delete previous contents of <OUT> before extracting."
+msgstr "추출 전에 <OUT>의 기존 내용을 삭제합니다."
+
+#: .\src\wte.py:29
+msgid "Path to output translation json. By default, outputs to wte_lang.json."
+msgstr "번역 json을 출력할 경로입니다. 기본값은 wte_lang.json입니다."
+
+#: .\src\wte.py:30
+msgid "An extractor to run over the world, multiple may be selected. If no extractors are specified, all available extractors will be run."
+msgstr "세계에서 실행할 추출기입니다. 여러 개 선택할 수 있습니다. 지정하지 않으면 모든 사용 가능한 추출기가 실행됩니다."
+
+#: .\src\wte.py:31
+msgid "A dimension to scan, multiple may be selected. If no dimensions are specified, all dimensions will be scanned."
+msgstr "스캔할 차원입니다. 여러 개 선택할 수 있습니다. 지정하지 않으면 모든 차원이 스캔됩니다."
+
+#: .\src\wte.py:32
+msgid "Keep duplicate translation texts as separate keys."
+msgstr "중복된 번역 텍스트를 별도의 키로 유지합니다."
+
+#: .\src\wte.py:33
+msgid "Sort output json alphabetically."
+msgstr "출력 json을 알파벳순으로 정렬합니다."
+
+#: .\src\wte.py:34
+msgid "Amount of spaces used to indent the output json."
+msgstr "출력 json 들여쓰기에 사용할 공백 수입니다."
+
+#: .\src\wte.py:35
+msgid "When iterating the world, save every <BATCH> chunks."
+msgstr "세계 순회할 시에 <BATCH> 청크마다 저장합니다."
+
+#: .\src\wte.py:36
+msgid "Ignore extractor data version incompatibilities."
+msgstr "추출기 데이터 버전의 호환성 문제를 무시합니다."
+
+#: .\src\wte.py:47
+msgid "Creating working copy of the world..."
+msgstr "세계의 작업 복사본을 생성하는 중..."
+
+#: .\src\wte.py:59
+msgid ""
+"Could not copy world: {}.\n"
+"Exiting..."
+msgstr ""
+"세계를 복사할 수 없습니다: {}.\n"
+"종료합니다..."
+
+#: .\src\wte.py:65
+msgid ""
+"Could not load requested world: {}.\n"
+"Exiting..."
+msgstr ""
+"요청한 세계를 불러올 수 없습니다: {}.\n"
+"종료합니다..."
+
+#: .\src\wte.py:71
+msgid ""
+"Invalid settings: {}\n"
+"Exiting..."
+msgstr ""
+"잘못된 설정: {}\n"
+"종료합니다..."
+
+#: .\src\wte.py:77
+msgid ""
+"Extraction interrupted. Output file partially translated.\n"
+"Exiting..."
+msgstr ""
+"추출이 중단되었습니다. 출력 파일이 부분적으로 번역되었습니다.\n"
+"종료합니다..."
+
+#: .\src\wte.py:80
+msgid ""
+"Error loading chunk: {}\n"
+"This error may indicate the version of amulet you're using is not compatible with your Minecraft version.\n"
+"Exiting..."
+msgstr ""
+"청크를 불러오는 중 오류 발생: {}\n"
+"이 오류는 사용 중인 Amulet 버전이 당신의 마인크래프트 버전과 호환되지 않을 수 있음을 나타냅니다.\n"
+"종료합니다..."
+
+#: .\src\wte.py:83
+msgid ""
+"Error accessing tag: {}\n"
+"This error may indicate the current extractors are not compatible with your Minecraft version.\n"
+"Exiting..."
+msgstr ""
+"태그에 접근하는 중 오류 발생: {}\n"
+"이 오류는 현재 추출기가 당신의 마인크래프트 버전과 호환되지 않을 수 있음을 나타냅니다.\n"
+"종료합니다..."
+
